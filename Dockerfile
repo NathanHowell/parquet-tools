@@ -8,7 +8,7 @@ RUN mvn package -Plocal
 
 FROM openjdk:8-jre-alpine
 
-RUN apk add --no-cache tini
+RUN apk add --no-cache tini libc6-compat
 
 COPY --from=build /parquet-mr/parquet-tools/target/parquet-tools-1.9.0.jar /parquet-tools.jar
 
