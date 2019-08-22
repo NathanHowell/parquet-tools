@@ -1,7 +1,7 @@
 FROM maven:3-jdk-8-alpine AS build
 
 RUN apk add --no-cache ca-certificates git
-RUN git clone --single-branch --depth=1 --branch=apache-parquet-1.9.0 https://github.com/apache/parquet-mr.git
+RUN git clone --single-branch --depth=1 --branch=apache-parquet-1.11.0 https://github.com/apache/parquet-mr.git
 
 WORKDIR /parquet-mr/parquet-tools
 RUN mvn package -Plocal
