@@ -1,0 +1,21 @@
+diff --git a/parquet-tools/pom.xml b/parquet-tools/pom.xml
+index 14d66323b..c2180ae3d 100644
+--- a/parquet-tools/pom.xml
++++ b/parquet-tools/pom.xml
+@@ -56,6 +56,16 @@
+       <artifactId>parquet-hadoop</artifactId>
+       <version>${project.version}</version>
+     </dependency>
++    <dependency>
++      <groupId>com.fasterxml.jackson.core</groupId>
++      <artifactId>jackson-core</artifactId>
++      <version>${jackson.version}</version>
++    </dependency>
++    <dependency>
++      <groupId>com.fasterxml.jackson.core</groupId>
++      <artifactId>jackson-databind</artifactId>
++      <version>${jackson-databind.version}</version>
++    </dependency>
+     <dependency>
+       <groupId>org.apache.hadoop</groupId>
+       <artifactId>hadoop-client</artifactId>
