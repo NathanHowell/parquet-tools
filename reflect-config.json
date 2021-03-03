@@ -1,0 +1,12 @@
+[
+  {
+    "name" : "org.apache.parquet.tools.command.Registry",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "allPublicFields" : true,
+    "allDeclaredClasses" : true,
+    "allPublicClasses" : true
+  }
+]
