@@ -19,7 +19,7 @@ COPY --from=build /parquet-tools.jar /parquet-tools.jar
 ENTRYPOINT ["/sbin/tini", "--", "java", "-XX:-UsePerfData", "-jar", "/parquet-tools.jar"]
 
 
-FROM ghcr.io/graalvm/graalvm-ce:21.0.0.2@sha256:626b5b59717e950ab122a5d706ec2e9905e86ef3a45b3e20e41b66205afcabd2 AS graal
+FROM ghcr.io/graalvm/graalvm-ce:21.1.0@sha256:01eeec62c667293741a666ce9b2d79a98b57691f051ed4071e00144bf24373d1 AS graal
 RUN gu install native-image
 
 COPY reflect-config.json trace.sh users.parquet /tmp/
