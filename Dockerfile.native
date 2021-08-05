@@ -10,7 +10,7 @@ RUN patch -u -p2 < /tmp/00.patch
 RUN mvn package -Plocal
 RUN cp /parquet-mr/parquet-tools/target/parquet-tools-${VERSION}.jar /parquet-tools.jar
 
-FROM adoptopenjdk/openjdk8:alpine-jre@sha256:3916648ace194fee07ec58e8d79728c46ddbce444a6d1c1c2529210d779f3fa6 AS regular
+FROM adoptopenjdk/openjdk8:alpine-jre@sha256:2c07baa99eb8f55b1c93a52b0de3d7337708ee0983763c94e9350dccfc038205 AS regular
 
 RUN apk add --no-cache tini
 
