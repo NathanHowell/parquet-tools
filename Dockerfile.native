@@ -38,7 +38,7 @@ RUN native-image \
   --verbose \
   -jar /parquet-tools.jar
 
-FROM debian:buster-slim@sha256:c9c3c682452791a9c301786a2beedb20f291e107c1b699fed0d4d145cc247d4f AS native
+FROM debian:buster-slim@sha256:b92194336992198b8d97d5f08b94f28459b6cb7146b4ea549c0fd45351ed7718 AS native
 
 RUN apt update && apt install -y tini && apt clean
 
